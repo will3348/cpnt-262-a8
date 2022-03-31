@@ -29,6 +29,8 @@ $fetch("https://dog.ceo/api/breeds/image/random"),
 );
 ``` 
 - use the data in the template with{{}}.
+### Deploy to Netlify
+https://keen-speculoos-685bb8.netlify.app/
 ### Attributes
 - Storyblok Tutorial #1: Fetching data from youtube : https://www.youtube.com/watch?v=-fQB8FDYLSg&ab_channel=LIFTED
 - nuxtjs guide: https://www.nuxtjs.cn/guides/features/data-fetching
