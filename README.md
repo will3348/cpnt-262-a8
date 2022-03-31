@@ -32,3 +32,4 @@ $fetch("https://dog.ceo/api/breeds/image/random"),
 ### Attributes
 - Storyblok Tutorial #1: Fetching data from youtube : https://www.youtube.com/watch?v=-fQB8FDYLSg&ab_channel=LIFTED
 - nuxtjs guide: https://www.nuxtjs.cn/guides/features/data-fetching
+- dog api: https://dog.ceo/dog-api/
