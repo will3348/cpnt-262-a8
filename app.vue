@@ -10,6 +10,7 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
+// fetch data from storyblok
   const data = ref(null);
   onMounted(async () => {
     data.value = await fetch(
@@ -18,6 +19,7 @@ import { ref, onMounted } from "vue";
       .then((response) => response.json())
       .then(({ story }) => story.content);
   });
+  // fetching data from public api (dog api)
   const {data:dog} = await useAsyncData("dogs", ()=> 
 $fetch("https://dog.ceo/api/breeds/image/random"),
 );
