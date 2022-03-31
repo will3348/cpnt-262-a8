@@ -3,6 +3,8 @@
    <h1>{{data.title}}</h1>
    <p>{{data.description}}</p>
    <img :src="data.image.filename" alt="" />
+   <h1>Fetch data from public api</h1>
+   <img :src="dog.message" alt=""/>
   </div>
 </template>
 
@@ -16,11 +18,13 @@ import { ref, onMounted } from "vue";
       .then((response) => response.json())
       .then(({ story }) => story.content);
   });
+  const {data:dog} = await useAsyncData("dogs", ()=> 
+$fetch("https://dog.ceo/api/breeds/image/random"),
+);
 </script>
 <style scoped>
 div{
   width: 500px;
-  height: 1000px;
   border: 1px solid black;
   margin: 50px auto;
 }
